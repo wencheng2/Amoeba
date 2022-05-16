@@ -5,6 +5,10 @@
 <h2>{{ title }}.</h2>
 <h3>{{ message }}</h3>
 
-<p>This is the content for my test page</p>
+<<form action="/uploader" method="POST"
+      enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" />
+</form>
 
 {% endblock %}

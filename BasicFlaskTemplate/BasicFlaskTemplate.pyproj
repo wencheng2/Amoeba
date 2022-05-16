@@ -32,6 +32,9 @@
     <Compile Include="runserver.py" />
     <Compile Include="BasicFlaskTemplate\__init__.py" />
     <Compile Include="BasicFlaskTemplate\views.py" />
+    <Compile Include="BasicFlaskTemplate\upload.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BasicFlaskTemplate\" />
