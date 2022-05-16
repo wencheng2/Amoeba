@@ -1,7 +1,9 @@
 # syntax=docker/dockerfile:1
 # Modified by Martin Gleeson 12/05/22
 
-FROM python:latest
+FROM python:slim-buster
+
+RUN apt-get update && apt-get install -y
 
 WORKDIR ./BasicFlaskTemplate
 
