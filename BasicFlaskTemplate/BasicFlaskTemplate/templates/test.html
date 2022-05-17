@@ -2,20 +2,21 @@
 
 {% block content %}
 
-<h2>{{ title }}</h2>
-<h3>{{ message }}</h3>
+<h2>Result</h2>
 
-<form action="/uploader" method="POST"
-      enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <input type="submit" />
-</form>
 
-<img src="{{ provided_image }}" alt="provided image" />
 
-<!--
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6"><h2>Provided Image</h2></div>
+        <div class="col-sm-6"><h2>Resulting Graph</h2></div>
+    </div>
+    <div class="row">
+        <img class="col-sm-6" src="{{ provided_image }}" alt="Provided Image" />
+        <img class="col-sm-6" src="{{ generated_graph }}" alt="Result" />
+    </div>
+</div>
 
-    <img src="/static/uploads/cloud.png"/>
 
--->
+
 {% endblock %}

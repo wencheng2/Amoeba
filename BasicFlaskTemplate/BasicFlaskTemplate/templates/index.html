@@ -7,15 +7,14 @@
 
 <form action="/uploader" method="POST"
       enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <input type="submit" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"><label for="fileinput1">Select Image</label><input class="form-control-file" type="file" name="file" value="Select Image" id="fileinput1"/></div>
+            <div class="col-sm-6"><input class="btn btn-primary" type="submit" value="Process File" /></div>
+        </div>
+    </div>
 </form>
 
-<img src="{{ provided_image }}" alt="provided image" />
+<!--<img src="{{ provided_image }}" alt="provided image" />-->
 
-<!--
-
-    <img src="/static/uploads/cloud.png"/>
-
--->
 {% endblock %}

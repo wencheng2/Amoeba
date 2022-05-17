@@ -3,7 +3,7 @@
 
 FROM python:slim-buster
 
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y && pip install --upgrade pip && apt-get install libgl1 -y && apt-get install libglib2.0-0 -y
 
 WORKDIR ./BasicFlaskTemplate
 
