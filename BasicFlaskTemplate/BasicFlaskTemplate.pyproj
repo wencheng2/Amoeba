@@ -41,6 +41,7 @@
     <Folder Include="BasicFlaskTemplate\static\" />
     <Folder Include="BasicFlaskTemplate\static\content\" />
     <Folder Include="BasicFlaskTemplate\static\fonts\" />
+    <Folder Include="BasicFlaskTemplate\static\uploads\" />
     <Folder Include="BasicFlaskTemplate\static\scripts\" />
     <Folder Include="BasicFlaskTemplate\templates\" />
   </ItemGroup>

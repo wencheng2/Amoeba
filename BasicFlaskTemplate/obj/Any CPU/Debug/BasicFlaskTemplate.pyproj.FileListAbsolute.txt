@@ -1,2 +1,0 @@
-C:\Users\0nilinkz\source\repos\BasicFlaskTemplate\BasicFlaskTemplate\obj\Any CPU\Debug\BasicFlaskTemplate.pyproj.SuggestedBindingRedirects.cache
-C:\Users\0nilinkz\source\repos\BasicFlaskTemplate\BasicFlaskTemplate\obj\Any CPU\Debug\BasicFlaskTemplate.pyproj.CoreCompileInputs.cache

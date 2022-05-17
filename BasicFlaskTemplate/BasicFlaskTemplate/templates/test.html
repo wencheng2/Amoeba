@@ -2,13 +2,20 @@
 
 {% block content %}
 
-<h2>{{ title }}.</h2>
+<h2>{{ title }}</h2>
 <h3>{{ message }}</h3>
 
-<<form action="/uploader" method="POST"
+<form action="/uploader" method="POST"
       enctype="multipart/form-data">
     <input type="file" name="file" />
     <input type="submit" />
 </form>
 
+<img src="{{ provided_image }}" alt="provided image" />
+
+<!--
+
+    <img src="/static/uploads/cloud.png"/>
+
+-->
 {% endblock %}
