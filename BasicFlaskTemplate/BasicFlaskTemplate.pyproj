@@ -29,7 +29,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BasicFlaskTemplate\ImageColorProcessor.py" />
     <Compile Include="runserver.py" />
     <Compile Include="BasicFlaskTemplate\__init__.py" />
     <Compile Include="BasicFlaskTemplate\views.py" />
@@ -45,10 +44,13 @@
     <Folder Include="BasicFlaskTemplate\static\uploads\" />
     <Folder Include="BasicFlaskTemplate\static\scripts\" />
     <Folder Include="BasicFlaskTemplate\templates\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BasicFlaskTemplate\templates\test.html" />
+    <Content Include="BasicFlaskTemplate\templates\result.html" />
     <Content Include="Dockerfile" />
+    <None Include="Properties\PublishProfiles\registry.hub.docker.com_0nilinkz.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="BasicFlaskTemplate\static\content\bootstrap.css" />
     <Content Include="BasicFlaskTemplate\static\content\bootstrap.min.css" />

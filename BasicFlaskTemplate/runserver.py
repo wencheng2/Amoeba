@@ -6,11 +6,11 @@ from os import environ
 from BasicFlaskTemplate import app
 
 if __name__ == '__main__':
-    #HOST = environ.get('SERVER_HOST', 'localhost')
+    HOST = environ.get('SERVER_HOST', 'localhost')
+    #0.0.0.0 for container -> above for testing on windows
     HOST = '0.0.0.0'
     try:
-        PORT = int(environ.get('SERVER_PORT', '5000'))
+        PORT = int(environ.get('SERVER_PORT', '80'))
     except ValueError:
-        PORT = 5555
-        print("5555")
+        PORT = 8080
     app.run(HOST, PORT)
