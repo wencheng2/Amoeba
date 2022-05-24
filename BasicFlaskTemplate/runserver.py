@@ -3,7 +3,7 @@ This script runs the BasicFlaskTemplate application using a development server.
 """
 
 from os import environ
-from BasicFlaskTemplate import app
+from Amoeba import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')

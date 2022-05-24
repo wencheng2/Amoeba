@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<form action="/uploader" method="POST"
+      enctype="multipart/form-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"><label for="fileinput1">Select Image</label><input class="form-control-file" type="file" name="file" value="Select Image" id="fileinput1" accept="image/png, image/jpeg"/></div>
+            <div class="col-sm-6"><input class="btn btn-primary" type="submit" value="Process File" /></div>
+        </div>
+    </div>
+</form>
+
+<!--<img src="{{ provided_image }}" alt="provided image" />-->
+
+{% endblock %}
